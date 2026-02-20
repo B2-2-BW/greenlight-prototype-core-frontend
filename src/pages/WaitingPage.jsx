@@ -45,19 +45,20 @@ export default function WaitingPage() {
     if (customerData?.actionGroupId == null) {
       return '';
     }
-    // if (customerData?.actionGroupId === 6) {
-    //   return '/resources/images/LI_sample.png';
-    // }
-    // if (customerData?.actionGroupId === 7) {
-    //   return '/resources/images/GF_sample2.png';
-    // }
+    if (customerData?.actionGroupId === 6) {
+      return '/resources/images/LI_sample.png';
+    }
+    if (customerData?.actionGroupId === 7) {
+      return '/resources/images/GF_sample2.png';
+    }
     // 20251209 무한도전
 
-    if (mudoTempRansom.current > 0.5) {
-      return '/resources/images/251209_muhan_1.jpg';
-    } else {
-      return '/resources/images/251209_muhan_2.png';
-    }
+    // if (mudoTempRansom.current > 0.5) {
+    //   return '/resources/images/251209_muhan_1.jpg';
+    // } else {
+    //   return '/resources/images/251209_muhan_2.png';
+    // }
+    return '';
   };
 
   // [POC용2] 액션 그룹 ID에 따른 스타일 반환 함수 추가
